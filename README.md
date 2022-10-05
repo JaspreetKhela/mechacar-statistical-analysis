@@ -68,13 +68,14 @@ _____
 _____
 
 We can briefly summarize our interpretations and findings for the t-test results as follows:
+* In general, the known population and sample data means are (mostly) not statistically different from each other.
 * As seen in Figure 4, the p-value of the dataset is 0.06, which means that the null hypothesis cannot be rejected since our assumed signficance value is 0.05; that is, we cannot confirm that the difference between the known PSI mean and the dataset's PSI mean are due to non-randomness. This is the same conclusion that we arrived at for the "Lot1" and "Lot2" PSI means as seen in the first two outputs in Figure 5.
 * As seen in the last output in Figure 5, the p-value of the "Lot3" t-test is 0.04, which is less than our signficance value of 0.05. Thus, the null hypothesis can rejected for this dataset; that is, we can confirm that the difference between the known PSI mean and the "Lot3" dataset's PSI mean are due to non-randomness.
 
 ## Study Design: MechaCar vs Competition
 An additional statistical study can quantify how the MechaCar performs against the competition by addressing the following questions:
 * What metric or metrics are we going to test?
-  * We can compare the cost, fuel efficiency, performance limits, and safety rating differentials between the MechaCar's versus competitiors' production vehicles.
+  * We can compare the cost, fuel efficiency, performance limits, and safety rating differentials between the MechaCar's versus competitiors' production vehicles. For the sake of simplicity, testing the cost differential would probably be the most meaningful for consumers.
 * What is the null hypothesis or alternative hypothesis?
   * The null hypothesis would be there are no significant difference between the aforementioned (chosen) metrics between the MechaCar's versus competitiors' production vehicles.
   * The alternative hypothesis would be that there is a significant difference between the aforementioned (chosen) metrics between the MechaCar's versus competitiors' production vehicles.
