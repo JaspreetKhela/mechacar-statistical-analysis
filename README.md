@@ -21,11 +21,11 @@ _____
 
 Our linear regression computation helps us to address the following questions:
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-  *  Assuming that we have a significance level of 0.05, only the vehicle length and ground clearance variables provide an acceptable level of non-random amount of variance to the mpg values in the dataset.
+  *  Assuming that we have a significance level of 0.05, only the vehicle length and ground clearance independent variables provide an acceptable level of non-random amounts of variance to the mpg values in the dataset.
 * Is the slope of the linear model considered to be zero? Why or why not?
-  * The slope is not zero since many of the variables in the linear regression equation have a non-zero coefficient.
+  * The slope is non-zero since many of the independent variables in the linear regression equation have non-zero coefficients.
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-  * Since the the r-squared value is around 70% (which is a considered a strong positive correlation), the independent variables in the linear regression equation do an adaquete job in perdicting the mpg values; however, the mpg values are most likely dependent on linear or non-linear versions of other variables not included in the dataset.
+  * Since the the r-squared value is around 70% (which is a considered a moderate/strong positive correlation), the independent variables in the linear regression equation do an adaquete job in perdicting the mpg values; however, the mpg values are most likely dependent on linear or non-linear versions of other variables not included in the dataset.
 
 ## Summary Statistics on Suspension Coils
 The following figures were obtained from the analysis.
@@ -68,7 +68,7 @@ _____
 _____
 
 We can briefly summarize our interpretations and findings for the t-test results as follows:
-* As seen in Figure 4, the p-value of the dataset is 0.06, which means that the null hypothesis cannot be rejected since our assumed signficance value is 0.05; that is, we cannot confirm that the difference between the known PSI mean and the dataset's PSI mean are due to non-randomness. This is the same conclusion that we arrive at for the "Lot1" and "Lot2" PSI means as seen in the first two outputs in Figure 5.
+* As seen in Figure 4, the p-value of the dataset is 0.06, which means that the null hypothesis cannot be rejected since our assumed signficance value is 0.05; that is, we cannot confirm that the difference between the known PSI mean and the dataset's PSI mean are due to non-randomness. This is the same conclusion that we arrived at for the "Lot1" and "Lot2" PSI means as seen in the first two outputs in Figure 5.
 * As seen in the last output in Figure 5, the p-value of the "Lot3" t-test is 0.04, which is less than our signficance value of 0.05. Thus, the null hypothesis can rejected for this dataset; that is, we can confirm that the difference between the known PSI mean and the "Lot3" dataset's PSI mean are due to non-randomness.
 
 ## Study Design: MechaCar vs Competition
@@ -76,9 +76,9 @@ An additional statistical study can quantify how the MechaCar performs against t
 * What metric or metrics are we going to test?
   * We can compare the cost, fuel efficiency, performance limits, and safety rating differentials between the MechaCar's versus competitiors' production vehicles.
 * What is the null hypothesis or alternative hypothesis?
-  * The null hypothesis would be there are no significant difference between the aforementioned metrics between the MechaCar's versus competitiors' production vehicles.
-  * The alternative hypothesis would be that there is a significant difference between the aforementioned metrics between the MechaCar's versus competitiors' production vehicles.
+  * The null hypothesis would be there are no significant difference between the aforementioned (chosen) metrics between the MechaCar's versus competitiors' production vehicles.
+  * The alternative hypothesis would be that there is a significant difference between the aforementioned (chosen) metrics between the MechaCar's versus competitiors' production vehicles.
 * What statistical test would you use to test the hypothesis? And why?
   * For whatever dependent variable we choose to create a model of (such as the cost of a vehicle), we can construct a linear model of that dependent variable using the other (independent) variables in the dataset as we did above.
 * What data is needed to run the statistical test?
-  * Data for the independent variables currently contained in the dataset and for the aforementioned additional metrics would need to be collected from a representative random sample.
+  * Data for the independent variables currently contained in the dataset and for the aforementioned additional metrics would need to be collected from a representative random sample in order to run the statistical test on our chosen dependent variable(s).
