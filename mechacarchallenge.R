@@ -38,14 +38,14 @@ head(lot_summary_df)
 # t-Test on the suspension_coil PSI data
 t.test(suspension_coil_df$PSI, mu=1500) 
 
-# One Sample t-Test on Lot 1
+# One sample t-test on Lot 1
 suspension_coil_lot1_df <-subset(suspension_coil_df, Manufacturing_Lot == 'Lot1')
 t.test(suspension_coil_lot1_df$PSI, mu=1500) 
 
-# One Sample t-Test on Lot 2
+# One sample t-test on Lot 2
 suspension_coil_lot2_df <-subset(suspension_coil, Manufacturing_Lot == 'Lot2')
 t.test(suspension_coil_lot2_df$PSI, mu=1500) 
 
-# One Sample t-Test on Lot 3
+# One sample t-test on Lot 3
 suspension_coil_lot3_df <-subset(suspension_coil, Manufacturing_Lot == 'Lot3')
 t.test(suspension_coil_lot3_df$PSI, mu=1500) 
